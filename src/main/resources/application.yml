@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    username: root
+    password: 0715eg0715
+    url: jdbc:mysql://localhost:3306/movies
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format-sql: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: "email"
+    password: "password"
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+project:
+  poster: posters/
+
+base:
+  url: "http://localhost:8080"
